@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="false"
+            android:paddingLeft="10dp"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:paddingRight="5dp"
+            android:text="&quot;mDocInABox&quot;"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:background="#4F8ACE" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="12dp"
+                    android:text="ROOM TEMPERATURE"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TVTempRoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="12dp"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="12dp"
+                    android:text="°F"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="ROOM HUMIDITY"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TVHumid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:scaleType="fitXY"
+        android:src="@drawable/bar" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ImageView01"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="6dp" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottomleft"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/bg" />
+
+                <ImageView
+                    android:id="@+id/IVHealthDashBoard"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bottom"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:src="@drawable/dashboard" />
+
+                <TextView
+                    android:id="@+id/TVHealthDash"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bottom"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:text="HEALTH DASHBOARD"
+                    android:textColor="#000066"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottomright"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/bg" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="6dp" >
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottomleft"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/bg" />
+
+                <ImageView
+                    android:id="@+id/IVHeartRate"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bottom"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:src="@drawable/heart" />
+
+                <TextView
+                    android:id="@+id/TVHeartRate"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bottom"
+                    android:paddingLeft="55dp"
+                    android:paddingTop="20dp"
+                    android:text="HEART RATE"
+                    android:textColor="#000066"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottomright"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/bg" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="6dp" >
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottomleft"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/bg" />
+
+                <ImageView
+                    android:id="@+id/IVTempurature"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bottom"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:src="@drawable/temp" />
+
+                <TextView
+                    android:id="@+id/TVDEG"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bottom"
+                    android:paddingLeft="45dp"
+                    android:paddingTop="20dp"
+                    android:text="TEMPURATURE"
+                    android:textColor="#000066"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ImageView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottomright"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/bg" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="6dp" >
+
+                <ImageView
+                    android:id="@+id/ImageView07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottomleft"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/bg" />
+
+                <ImageView
+                    android:id="@+id/IVPressure"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bottom"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:src="@drawable/pressure" />
+
+                <TextView
+                    android:id="@+id/TVPressure"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bottom"
+                    android:paddingLeft="60dp"
+                    android:paddingTop="20dp"
+                    android:text="PRESSURE"
+                    android:textColor="#000066"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ImageView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottomright"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/bg" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="6dp" >
+
+                <ImageView
+                    android:id="@+id/ImageView08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottomleft"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/bg" />
+
+                <ImageView
+                    android:id="@+id/IVOxygen"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bottom"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:src="@drawable/oxygen" />
+
+                <TextView
+                    android:id="@+id/TVOxygen"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bottom"
+                    android:paddingLeft="65dp"
+                    android:paddingTop="20dp"
+                    android:text="OXYGEN"
+                    android:textColor="#000066"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ImageView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottomright"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/bg" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="6dp" >
+
+                <ImageView
+                    android:id="@+id/ImageView09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottomleft"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/bg" />
+
+                <ImageView
+                    android:id="@+id/IVPH"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bottom"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:src="@drawable/ph" />
+
+                <TextView
+                    android:id="@+id/TVphBalance"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bottom"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="20dp"
+                    android:text="PH BALANCE"
+                    android:textColor="#000066"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ImageView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bottomright"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/bg" />
+
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

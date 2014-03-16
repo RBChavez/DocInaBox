@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="false"
+            android:paddingLeft="10dp"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:paddingRight="5dp"
+            android:text="&quot;mDocInABox&quot;"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:background="#4F8ACE" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="12dp"
+                    android:text="ROOM TEMPERATURE"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TVTempRoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="12dp"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="12dp"
+                    android:text="°F"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="ROOM HUMIDITY"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TVHumid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:scaleType="fitXY"
+        android:src="@drawable/bar" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:scaleType="fitXY"
+        android:src="@drawable/bar" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="HEART RATE"
+        android:textColor="#000066"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/TextView07"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="23dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bar" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/GPmmHg"
+        android:layout_toRightOf="@+id/GPmmHg"
+        android:text="Time"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TVMEAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignTop="@+id/GPmmHg"
+        android:text="0"
+        android:textColor="#000" />
+
+    <edu.hood.aom.ms.GraphView
+        android:id="@+id/GPmmHg"
+        android:layout_width="260dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TVMEAS"
+        android:layout_alignLeft="@+id/GPmmHg"
+        android:text="BPM"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/GPBEAT"
+        android:layout_alignLeft="@+id/GPBEAT"
+        android:text="Beat"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/TextView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/GPBEAT"
+        android:layout_alignLeft="@+id/textView4"
+        android:text="Time"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <edu.hood.aom.ms.GraphView
+        android:id="@+id/GPBEAT"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/ImageView02"
+        android:layout_alignLeft="@+id/GPmmHg"
+        android:layout_marginBottom="22dp" />
+
+    <TextView
+        android:id="@+id/TextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_toRightOf="@+id/TextView06"
+        android:text="BPM"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TVBPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView07"
+        android:layout_alignBottom="@+id/TextView07"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/TextView07"
+        android:background="@drawable/bluebotton"
+        android:gravity="center"
+        android:height="50dp"
+        android:textColor="#FFF"
+        android:textColorHighlight="#000"
+        android:textSize="40sp"
+        android:width="100dp" />
+
+    <TextView
+        android:id="@+id/TVBEAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView01"
+        android:layout_toRightOf="@+id/GPBEAT"
+        android:text="0"
+        android:textColor="#000" />
+
+</RelativeLayout>

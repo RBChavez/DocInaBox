@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="false"
+            android:paddingLeft="10dp"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:paddingRight="5dp"
+            android:text="&quot;mDocInABox&quot;"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:background="#4F8ACE" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="12dp"
+                    android:text="ROOM TEMPERATURE"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TVTempRoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="12dp"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="12dp"
+                    android:text="°F"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="ROOM HUMIDITY"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TVHumid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="#FFF"
+                    android:textSize="10sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:scaleType="fitXY"
+        android:src="@drawable/bar" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:scaleType="fitXY"
+        android:src="@drawable/bar" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ImageView01"
+        android:gravity="center_vertical"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp" >
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="0dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="42dp"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="10dp"
+                    android:text="HEALTH DASHBOARD"
+                    android:textColor="#000066"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="85dp"
+                    android:text="BPM"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="45dp" >
+
+                    <ImageView
+                        android:id="@+id/IVHeartRate"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/heart" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebottonleft"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/bar" />
+
+                    <TextView
+                        android:id="@+id/TVBPM"
+                        android:layout_width="180dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebotton"
+                        android:height="45dp"
+                        android:paddingLeft="80dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#FFF"
+                        android:textColorHighlight="#000"
+                        android:textSize="30sp"
+                        android:width="300dp" />
+
+                    <ImageView
+                        android:id="@+id/IVHealthDashBoard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebottonright"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/bar" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="85dp"
+                    android:text="SpO2"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="45dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView10"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/oxygen" />
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebottonleft"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/bar" />
+
+                    <TextView
+                        android:id="@+id/TVSPO2"
+                        android:layout_width="108dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebotton"
+                        android:height="45dp"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#FFF"
+                        android:textColorHighlight="#000"
+                        android:textSize="30sp"
+                        android:width="300dp" />
+
+                    <TextView
+                        android:id="@+id/TextView16"
+                        android:layout_width="75dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebotton"
+                        android:height="45dp"
+                        android:paddingTop="3dp"
+                        android:text="%"
+                        android:textColor="#FFF"
+                        android:textColorHighlight="#000"
+                        android:textSize="30sp"
+                        android:width="300dp" />
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebottonright"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/bar" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TVSYS_Pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="85dp"
+                    android:text="SYS                          DIA"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="45dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView07"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/pressure" />
+
+                    <ImageView
+                        android:id="@+id/ImageView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebottonleft"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/bar" />
+
+                    <TextView
+                        android:id="@+id/TVSYS"
+                        android:layout_width="70dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebotton"
+                        android:gravity="center"
+                        android:height="45dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#FFF"
+                        android:textColorHighlight="#000"
+                        android:textSize="30sp"
+                        android:width="300dp" />
+
+                    <ImageView
+                        android:id="@+id/ImageView06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebottonright"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/bar" />
+
+                    <ImageView
+                        android:id="@+id/ImageView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebottonleft"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/bar" />
+
+                    <TextView
+                        android:id="@+id/TVDIA"
+                        android:layout_width="70dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebotton"
+                        android:gravity="center"
+                        android:height="45dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#FFF"
+                        android:textColorHighlight="#000"
+                        android:textSize="30sp"
+                        android:width="300dp" />
+
+                    <ImageView
+                        android:id="@+id/ImageView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebottonright"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/bar" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="85dp"
+                    android:text="DEG"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="45dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView04"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/temp" />
+
+                    <ImageView
+                        android:id="@+id/ImageView08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebottonleft"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/bar" />
+
+                    <TextView
+                        android:id="@+id/TVDEG"
+                        android:layout_width="108dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebotton"
+                        android:gravity="right"
+                        android:height="45dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#FFF"
+                        android:textColorHighlight="#000"
+                        android:textSize="30sp"
+                        android:width="300dp" />
+
+                    <TextView
+                        android:id="@+id/TextView17"
+                        android:layout_width="75dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebotton"
+                        android:height="45dp"
+                        android:paddingTop="3dp"
+                        android:text="°F"
+                        android:textColor="#FFF"
+                        android:textColorHighlight="#000"
+                        android:textSize="30sp"
+                        android:width="300dp" />
+
+                    <ImageView
+                        android:id="@+id/ImageView09"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebottonright"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/bar" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="85dp"
+                    android:text="PH"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="45dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView13"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/ph" />
+
+                    <ImageView
+                        android:id="@+id/ImageView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebottonleft"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/bar" />
+
+                    <TextView
+                        android:id="@+id/TVPH"
+                        android:layout_width="180dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebotton"
+                        android:height="45dp"
+                        android:paddingLeft="80dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#FFF"
+                        android:textColorHighlight="#000"
+                        android:textSize="30sp"
+                        android:width="300dp" />
+
+                    <ImageView
+                        android:id="@+id/ImageView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bluebottonright"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/bar" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tableLayout2"
+        android:layout_marginRight="104dp"
+        android:src="@drawable/saveandsyn" />
+
+</RelativeLayout>
